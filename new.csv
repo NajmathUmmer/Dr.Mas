@@ -1,0 +1,579 @@
+did,diagnose,syd,symptom
+1,Allergy,38,Hoarse voice
+1,Allergy,68,Sinus pain and pressure
+1,Allergy,106,Sneezing
+1,Allergy,171,Snoring
+1,Allergy,172,Dry skin
+2,Anemia (low red blood cell count),12,Change in behavior
+2,Anemia (low red blood cell count),48,Lethargy (Sluggishness)
+2,Anemia (low red blood cell count),82,Tired
+2,Anemia (low red blood cell count),88,
+2,Anemia (low red blood cell count),93,Failure to thrive
+2,Anemia (low red blood cell count),124,Heart murmur (Abnormal heart sound)
+2,Anemia (low red blood cell count),18,Dizziness
+2,Anemia (low red blood cell count),25,Fainting
+2,Anemia (low red blood cell count),67,Shortness of breath
+2,Anemia (low red blood cell count),188,Confusion
+3,Appendicitis,2,Lower abdominal pain
+3,Appendicitis,90,Inconsolable baby
+3,Appendicitis,174,Stomach and abdominal pain
+3,Appendicitis,1,Upper abdominal pain
+3,Appendicitis,6,Back ache or pain
+3,Appendicitis,11,Chills
+3,Appendicitis,13,Constipation
+3,Appendicitis,29,Flank pain
+3,Appendicitis,33,Groin pain
+3,Appendicitis,44,Kidney pain (Flank pain)
+3,Appendicitis,79,Vomiting
+4,Arthritisjoint inflammation,6,Back ache or pain
+4,Arthritisjoint inflammation,22,Elbow ache or pain
+4,Arthritisjoint inflammation,31,
+4,Arthritisjoint inflammation,34,"Hand, finger ache or pain"
+4,Arthritisjoint inflammation,37,Hip pain
+4,Arthritisjoint inflammation,45,Knee pain
+4,Arthritisjoint inflammation,73,Toe pain
+4,Arthritisjoint inflammation,165,
+4,Arthritisjoint inflammation,116,Ankle pain
+4,Arthritisjoint inflammation,5,Arm ache or pain
+4,Arthritisjoint inflammation,46,Leg ache or pain
+4,Arthritisjoint inflammation,54,Neck ache or pain
+4,Arthritisjoint inflammation,180,Low back ache or pain
+4,Arthritisjoint inflammation,191,Shoulder stiffness or tightness
+5,Asthma,67,Shortness of breath
+5,Asthma,6,Back ache or pain
+5,Asthma,91,Wheezing (Noisy breathing)
+5,Asthma,110,Cyanosis (Blue skin coloration)
+5,Asthma,173,Chest pain
+5,Asthma,10,Chest pressure
+5,Asthma,14,Cough
+5,Asthma,176,Difficulty breathing
+5,Asthma,179,Congestion in chest or lungs
+5,Asthma,175,Hurts to breathe
+6,Brain tumorcancer of the brain,18,Dizziness
+6,Brain tumorcancer of the brain,66,Seizure
+6,Brain tumorcancer of the brain,70,Speech problem
+6,Brain tumorcancer of the brain,74,Unsteady gait (Trouble walking)
+6,Brain tumorcancer of the brain,78,Visual problems
+6,Brain tumorcancer of the brain,77,Vertigo (Room spinning)
+6,Brain tumorcancer of the brain,97,
+6,Brain tumorcancer of the brain,108,Loss of balance
+6,Brain tumorcancer of the brain,109,Bleeding in brain
+6,Brain tumorcancer of the brain,160,Memory loss
+6,Brain tumorcancer of the brain,164,Face numbness (paresthesias)
+6,Brain tumorcancer of the brain,166,Dementia
+6,Brain tumorcancer of the brain,170,Drooping eyelid (Ptosis)
+6,Brain tumorcancer of the brain,35,Headache
+6,Brain tumorcancer of the brain,187,Agitated
+6,Brain tumorcancer of the brain,189,Confusion and headache
+7,Breast cancertumor,18,Dizziness
+7,Breast cancertumor,173,Chest pain
+7,Breast cancertumor,9,Pain or soreness of breast
+7,Breast cancertumor,185,Lump or mass of breast
+7,Breast cancertumor,190,Nipple discharge
+8,Cancertumor,38,Hoarse voice
+8,Cancertumor,48,Lethargy (Sluggishness)
+8,Cancertumor,82,Tired
+8,Cancertumor,88,
+8,Cancertumor,93,Failure to thrive
+8,Cancertumor,165,
+8,Cancertumor,116,Ankle pain
+8,Cancertumor,164,Face numbness (paresthesias)
+8,Cancertumor,28,Fever of unknown origin
+8,Cancertumor,47,Swelling of both legs
+8,Cancertumor,87,"Weight loss, unexplained"
+8,Cancertumor,119,Night sweats
+8,Cancertumor,122,Jaw pain
+8,Cancertumor,127,Foot swelling
+8,Cancertumor,132,
+8,Cancertumor,142,
+8,Cancertumor,113,Abdominal swelling (Stomach swelling)
+8,Cancertumor,15,Dark stools
+8,Cancertumor,154,Armpit pain
+8,Cancertumor,155,Sweating
+8,Cancertumor,162,Leg numbness (paresthesias)
+8,Cancertumor,161,Arm numbness (paresthesias)
+8,Cancertumor,115,Hand numbness (paresthesias)
+8,Cancertumor,163,Foot numbness (paresthesias)
+8,Cancertumor,167,Facial droop (weakness)
+9,Cirrhosisliver failure and scarring,109,Bleeding in brain
+9,Cirrhosisliver failure and scarring,166,Dementia
+9,Cirrhosisliver failure and scarring,47,Swelling of both legs
+9,Cirrhosisliver failure and scarring,87,"Weight loss, unexplained"
+9,Cirrhosisliver failure and scarring,132,
+9,Cirrhosisliver failure and scarring,113,Abdominal swelling (Stomach swelling)
+9,Cirrhosisliver failure and scarring,49,
+9,Cirrhosisliver failure and scarring,105,Vomiting coffee ground material
+9,Cirrhosisliver failure and scarring,107,Bleeding gums
+9,Cirrhosisliver failure and scarring,118,Jaundice (Yellowing skin)
+9,Cirrhosisliver failure and scarring,123,Impotence
+9,Cirrhosisliver failure and scarring,133,Low blood sugar
+9,Cirrhosisliver failure and scarring,8,Blood in vomit
+9,Cirrhosisliver failure and scarring,3,Alcohol abuse
+9,Cirrhosisliver failure and scarring,184,Retaining fluid
+9,Cirrhosisliver failure and scarring,181,Unusual color or odor of urine
+10,Common coldupper respiratory infection,63,
+10,Common coldupper respiratory infection,104,
+11,Diabeteshigh blood sugar,48,Lethargy (Sluggishness)
+11,Diabeteshigh blood sugar,82,Tired
+11,Diabeteshigh blood sugar,93,Failure to thrive
+11,Diabeteshigh blood sugar,188,Confusion
+11,Diabeteshigh blood sugar,78,Visual problems
+11,Diabeteshigh blood sugar,164,Face numbness (paresthesias)
+11,Diabeteshigh blood sugar,170,Drooping eyelid (Ptosis)
+11,Diabeteshigh blood sugar,87,"Weight loss, unexplained"
+11,Diabeteshigh blood sugar,162,Leg numbness (paresthesias)
+11,Diabeteshigh blood sugar,161,Arm numbness (paresthesias)
+11,Diabeteshigh blood sugar,115,Hand numbness (paresthesias)
+11,Diabeteshigh blood sugar,163,Foot numbness (paresthesias)
+11,Diabeteshigh blood sugar,123,Impotence
+11,Diabeteshigh blood sugar,133,Low blood sugar
+11,Diabeteshigh blood sugar,181,Unusual color or odor of urine
+11,Diabeteshigh blood sugar,101,Urinary retention (Inability to urinate)
+11,Diabeteshigh blood sugar,30,Frequent urination (Frequency)
+11,Diabeteshigh blood sugar,56,Numbness
+11,Diabeteshigh blood sugar,129,Eye floaters
+11,Diabeteshigh blood sugar,145,
+11,Diabeteshigh blood sugar,146,Arm itching
+11,Diabeteshigh blood sugar,137,Foot itching
+11,Diabeteshigh blood sugar,151,Hand itching
+11,Diabeteshigh blood sugar,152,Leg itching
+11,Diabeteshigh blood sugar,168,Increased thirst
+11,Diabeteshigh blood sugar,169,Increased urination (polyuria)
+11,Diabeteshigh blood sugar,193,High blood sugar
+11,Diabeteshigh blood sugar,183,Excessive appetite
+12,Diabetes mellitus type 2elevated blood sugar,181,Unusual color or odor of urine
+12,Diabetes mellitus type 2elevated blood sugar,193,High blood sugar
+12,Diabetes mellitus type 2elevated blood sugar,183,Excessive appetite
+12,Diabetes mellitus type 2elevated blood sugar,19,Double vision (Diplopia)
+12,Diabetes mellitus type 2elevated blood sugar,40,Incontinence (leaking urine)
+12,Diabetes mellitus type 2elevated blood sugar,53,Nausea
+12,Diabetes mellitus type 2elevated blood sugar,57,Obesity
+13,Fibroiduterine muscle tumor,174,Stomach and abdominal pain
+13,Fibroiduterine muscle tumor,13,Constipation
+13,Fibroiduterine muscle tumor,33,Groin pain
+13,Fibroiduterine muscle tumor,60,Pelvic pain
+13,Fibroiduterine muscle tumor,75,Vaginal bleeding
+13,Fibroiduterine muscle tumor,139,Infertility (Female)
+14,Goiterenlarged thyroid,54,Neck ache or pain
+14,Goiterenlarged thyroid,55,Neck swelling
+14,Goiterenlarged thyroid,72,Swallowing problem (Dysphagia)
+15,Hernia,2,Lower abdominal pain
+15,Hernia,1,Upper abdominal pain
+15,Hernia,37,Hip pain
+16,Hyperthyroidismelevated thyroid hormone,172,Dry skin
+16,Hyperthyroidismelevated thyroid hormone,188,Confusion
+16,Hyperthyroidismelevated thyroid hormone,187,Agitated
+16,Hyperthyroidismelevated thyroid hormone,119,Night sweats
+16,Hyperthyroidismelevated thyroid hormone,183,Excessive appetite
+16,Hyperthyroidismelevated thyroid hormone,36,
+16,Hyperthyroidismelevated thyroid hormone,130,Amenorrhea (No menstruation)
+16,Hyperthyroidismelevated thyroid hormone,138,Hot flashes
+16,Hyperthyroidismelevated thyroid hormone,192,High blood pressure
+17,Hypocalcemialow blood calcium,82,Tired
+17,Hypocalcemialow blood calcium,66,Seizure
+17,Hypocalcemialow blood calcium,56,Numbness
+17,Hypocalcemialow blood calcium,80,General weakness
+17,Hypocalcemialow blood calcium,111,Muscle spasm
+17,Hypocalcemialow blood calcium,85,Tremors
+18,Hypoglycemialow blood sugar,12,Change in behavior
+18,Hypoglycemialow blood sugar,18,Dizziness
+18,Hypoglycemialow blood sugar,25,Fainting
+18,Hypoglycemialow blood sugar,188,Confusion
+18,Hypoglycemialow blood sugar,110,Cyanosis (Blue skin coloration)
+18,Hypoglycemialow blood sugar,66,Seizure
+18,Hypoglycemialow blood sugar,70,Speech problem
+18,Hypoglycemialow blood sugar,108,Loss of balance
+18,Hypoglycemialow blood sugar,155,Sweating
+18,Hypoglycemialow blood sugar,183,Excessive appetite
+18,Hypoglycemialow blood sugar,80,General weakness
+18,Hypoglycemialow blood sugar,85,Tremors
+18,Hypoglycemialow blood sugar,4,Anxiety (Nervousness)
+18,Hypoglycemialow blood sugar,86,
+19,Hypothyroidismlow thyroid hormone,172,Dry skin
+19,Hypothyroidismlow thyroid hormone,12,Change in behavior
+19,Hypothyroidismlow thyroid hormone,82,Tired
+19,Hypothyroidismlow thyroid hormone,88,
+19,Hypothyroidismlow thyroid hormone,93,Failure to thrive
+19,Hypothyroidismlow thyroid hormone,188,Confusion
+19,Hypothyroidismlow thyroid hormone,13,Constipation
+19,Hypothyroidismlow thyroid hormone,166,Dementia
+19,Hypothyroidismlow thyroid hormone,47,Swelling of both legs
+19,Hypothyroidismlow thyroid hormone,127,Foot swelling
+19,Hypothyroidismlow thyroid hormone,132,
+19,Hypothyroidismlow thyroid hormone,123,Impotence
+19,Hypothyroidismlow thyroid hormone,133,Low blood sugar
+19,Hypothyroidismlow thyroid hormone,184,Retaining fluid
+19,Hypothyroidismlow thyroid hormone,57,Obesity
+19,Hypothyroidismlow thyroid hormone,130,Amenorrhea (No menstruation)
+19,Hypothyroidismlow thyroid hormone,39,Hypothermia (Low temperature)
+19,Hypothyroidismlow thyroid hormone,16,Depressed
+19,Hypothyroidismlow thyroid hormone,134,Low blood pressure
+19,Hypothyroidismlow thyroid hormone,136,Low heart rate
+20,Leukemiablood cell cancer,87,"Weight loss, unexplained"
+20,Leukemiablood cell cancer,119,Night sweats
+20,Leukemiablood cell cancer,107,Bleeding gums
+20,Leukemiablood cell cancer,129,Eye floaters
+20,Leukemiablood cell cancer,7,Bleeding tendency
+20,Leukemiablood cell cancer,52,Nasal bleeding
+21,Malariamosquito transmitted illness,11,Chills
+21,Malariamosquito transmitted illness,132,
+21,Malariamosquito transmitted illness,118,Jaundice (Yellowing skin)
+21,Malariamosquito transmitted illness,26,Fever
+21,Malariamosquito transmitted illness,27,Fever in the returning traveler
+22,Meningitisspinal fluid infection,12,Change in behavior
+22,Meningitisspinal fluid infection,48,Lethargy (Sluggishness)
+22,Meningitisspinal fluid infection,18,Dizziness
+22,Meningitisspinal fluid infection,188,Confusion
+22,Meningitisspinal fluid infection,90,Inconsolable baby
+22,Meningitisspinal fluid infection,11,Chills
+22,Meningitisspinal fluid infection,54,Neck ache or pain
+22,Meningitisspinal fluid infection,66,Seizure
+22,Meningitisspinal fluid infection,70,Speech problem
+22,Meningitisspinal fluid infection,74,Unsteady gait (Trouble walking)
+22,Meningitisspinal fluid infection,97,
+22,Meningitisspinal fluid infection,160,Memory loss
+22,Meningitisspinal fluid infection,35,Headache
+22,Meningitisspinal fluid infection,189,Confusion and headache
+22,Meningitisspinal fluid infection,85,Tremors
+22,Meningitisspinal fluid infection,26,Fever
+22,Meningitisspinal fluid infection,32,"Cranky, crying, fussy, irritable child"
+22,Meningitisspinal fluid infection,89,
+22,Meningitisspinal fluid infection,95,
+22,Meningitisspinal fluid infection,103,
+22,Meningitisspinal fluid infection,186,Neck stiffness or tightness
+23,Migrainetype of headache,18,Dizziness
+23,Migrainetype of headache,79,Vomiting
+23,Migrainetype of headache,54,Neck ache or pain
+23,Migrainetype of headache,70,Speech problem
+23,Migrainetype of headache,78,Visual problems
+23,Migrainetype of headache,77,Vertigo (Room spinning)
+23,Migrainetype of headache,164,Face numbness (paresthesias)
+23,Migrainetype of headache,35,Headache
+23,Migrainetype of headache,122,Jaw pain
+23,Migrainetype of headache,53,Nausea
+23,Migrainetype of headache,192,High blood pressure
+23,Migrainetype of headache,23,Eye pain (Irritation)
+23,Migrainetype of headache,128,Visual flashing lights
+23,Migrainetype of headache,131,Blurry vision
+23,Migrainetype of headache,41,Insomnia (Trouble sleeping)
+24,Mumpsviral infection involving salivary glands,122,Jaw pain
+24,Mumpsviral infection involving salivary glands,7,Bleeding tendency
+24,Mumpsviral infection involving salivary glands,64,Scrotal pain
+24,Mumpsviral infection involving salivary glands,65,Scrotal swelling
+25,Kidney stonenephrolithiasis,2,Lower abdominal pain
+25,Kidney stonenephrolithiasis,174,Stomach and abdominal pain
+25,Kidney stonenephrolithiasis,1,Upper abdominal pain
+25,Kidney stonenephrolithiasis,6,Back ache or pain
+25,Kidney stonenephrolithiasis,29,Flank pain
+25,Kidney stonenephrolithiasis,33,Groin pain
+25,Kidney stonenephrolithiasis,44,Kidney pain (Flank pain)
+25,Kidney stonenephrolithiasis,79,Vomiting
+25,Kidney stonenephrolithiasis,180,Low back ache or pain
+25,Kidney stonenephrolithiasis,181,Unusual color or odor of urine
+25,Kidney stonenephrolithiasis,30,Frequent urination (Frequency)
+25,Kidney stonenephrolithiasis,40,Incontinence (leaking urine)
+25,Kidney stonenephrolithiasis,64,Scrotal pain
+25,Kidney stonenephrolithiasis,58,Painful urination
+25,Kidney stonenephrolithiasis,100,Blood in urine (Hematuria)
+26,"Plaguebubonic plague, bacteria yersinia infection",27,Fever in the returning traveler
+27,Pneumonialung infection,18,Dizziness
+27,Pneumonialung infection,67,Shortness of breath
+27,Pneumonialung infection,1,Upper abdominal pain
+27,Pneumonialung infection,6,Back ache or pain
+27,Pneumonialung infection,11,Chills
+27,Pneumonialung infection,29,Flank pain
+27,Pneumonialung infection,44,Kidney pain (Flank pain)
+27,Pneumonialung infection,180,Low back ache or pain
+27,Pneumonialung infection,110,Cyanosis (Blue skin coloration)
+27,Pneumonialung infection,173,Chest pain
+27,Pneumonialung infection,10,Chest pressure
+27,Pneumonialung infection,14,Cough
+27,Pneumonialung infection,176,Difficulty breathing
+27,Pneumonialung infection,179,Congestion in chest or lungs
+27,Pneumonialung infection,175,Hurts to breathe
+27,Pneumonialung infection,9,Pain or soreness of breast
+27,Pneumonialung infection,104,
+27,Pneumonialung infection,26,Fever
+27,Pneumonialung infection,89,
+27,Pneumonialung infection,98,
+27,Pneumonialung infection,114,
+27,Pneumonialung infection,117,Hemoptysis (Coughing blood)
+27,Pneumonialung infection,159,Chest burning
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",184,Retaining fluid
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",193,High blood sugar
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",57,Obesity
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",75,Vaginal bleeding
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",139,Infertility (Female)
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",130,Amenorrhea (No menstruation)
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",135,Darkening of the skin (Hyperpigmentation)
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder",140,Increased facial hair
+29,Premenstrual syndromePMS,12,Change in behavior
+29,Premenstrual syndromePMS,18,Dizziness
+29,Premenstrual syndromePMS,2,Lower abdominal pain
+29,Premenstrual syndromePMS,6,Back ache or pain
+29,Premenstrual syndromePMS,35,Headache
+29,Premenstrual syndromePMS,183,Excessive appetite
+29,Premenstrual syndromePMS,57,Obesity
+30,Primary dysmenorrheapainful menstruation,60,Pelvic pain
+31,Rheumatoid arthritistype of chronic joint inflammation,6,Back ache or pain
+31,Rheumatoid arthritistype of chronic joint inflammation,22,Elbow ache or pain
+31,Rheumatoid arthritistype of chronic joint inflammation,34,"Hand, finger ache or pain"
+31,Rheumatoid arthritistype of chronic joint inflammation,5,Arm ache or pain
+31,Rheumatoid arthritistype of chronic joint inflammation,46,Leg ache or pain
+31,Rheumatoid arthritistype of chronic joint inflammation,47,Swelling of both legs
+31,Rheumatoid arthritistype of chronic joint inflammation,127,Foot swelling
+31,Rheumatoid arthritistype of chronic joint inflammation,43,Joint pain
+31,Rheumatoid arthritistype of chronic joint inflammation,83,Wrist pain
+31,Rheumatoid arthritistype of chronic joint inflammation,143,Wrist swelling
+31,Rheumatoid arthritistype of chronic joint inflammation,153,Upper leg pain
+31,Rheumatoid arthritistype of chronic joint inflammation,157,Joint stiffness
+32,Secondary dysmenorrheapainful menstruation,60,Pelvic pain
+33,Sexually transmitted diseaseSTD,2,Lower abdominal pain
+33,Sexually transmitted diseaseSTD,58,Painful urination
+33,Sexually transmitted diseaseSTD,61,Penile discharge
+33,Sexually transmitted diseaseSTD,42,Skin itching
+33,Sexually transmitted diseaseSTD,76,Vaginal discharge
+33,Sexually transmitted diseaseSTD,182,Penis inflammation or swelling
+34,Sinusitissinus infection,68,Sinus pain and pressure
+34,Sinusitissinus infection,171,Snoring
+34,Sinusitissinus infection,18,Dizziness
+34,Sinusitissinus infection,67,Shortness of breath
+34,Sinusitissinus infection,11,Chills
+34,Sinusitissinus infection,14,Cough
+34,Sinusitissinus infection,35,Headache
+34,Sinusitissinus infection,122,Jaw pain
+34,Sinusitissinus infection,63,
+34,Sinusitissinus infection,104,
+34,Sinusitissinus infection,52,Nasal bleeding
+34,Sinusitissinus infection,26,Fever
+34,Sinusitissinus infection,95,
+34,Sinusitissinus infection,23,Eye pain (Irritation)
+34,Sinusitissinus infection,24,Facial pain
+34,Sinusitissinus infection,156,Nasal congestion
+34,Sinusitissinus infection,20,Ear pressure
+34,Sinusitissinus infection,21,Pain in the ear
+34,Sinusitissinus infection,69,Sore throat
+34,Sinusitissinus infection,84,Throat pain
+34,Sinusitissinus infection,177,Pulling at ears
+35,Syphilistreponema pallidum,160,Memory loss
+35,Syphilistreponema pallidum,166,Dementia
+35,Syphilistreponema pallidum,19,Double vision (Diplopia)
+35,Syphilistreponema pallidum,103,
+35,Syphilistreponema pallidum,92,Swollen lymph nodes (Large lymph nodes)
+35,Syphilistreponema pallidum,94,
+36,Tonsillitistonsil infection,38,Hoarse voice
+36,Tonsillitistonsil infection,171,Snoring
+36,Tonsillitistonsil infection,67,Shortness of breath
+36,Tonsillitistonsil infection,11,Chills
+36,Tonsillitistonsil infection,79,Vomiting
+36,Tonsillitistonsil infection,14,Cough
+36,Tonsillitistonsil infection,35,Headache
+36,Tonsillitistonsil infection,8,Blood in vomit
+36,Tonsillitistonsil infection,26,Fever
+36,Tonsillitistonsil infection,117,Hemoptysis (Coughing blood)
+36,Tonsillitistonsil infection,21,Pain in the ear
+36,Tonsillitistonsil infection,69,Sore throat
+36,Tonsillitistonsil infection,84,Throat pain
+36,Tonsillitistonsil infection,112,Drooling
+37,Tuberculosis infectionTB,82,Tired
+37,Tuberculosis infectionTB,93,Failure to thrive
+37,Tuberculosis infectionTB,14,Cough
+37,Tuberculosis infectionTB,155,Sweating
+37,Tuberculosis infectionTB,27,Fever in the returning traveler
+38,Typhoid feversalmonella typhi infection from contaminated food or water,14,Cough
+38,Typhoid feversalmonella typhi infection from contaminated food or water,97,
+38,Typhoid feversalmonella typhi infection from contaminated food or water,189,Confusion and headache
+38,Typhoid feversalmonella typhi infection from contaminated food or water,104,
+38,Typhoid feversalmonella typhi infection from contaminated food or water,27,Fever in the returning traveler
+38,Typhoid feversalmonella typhi infection from contaminated food or water,103,
+38,Typhoid feversalmonella typhi infection from contaminated food or water,94,
+38,Typhoid feversalmonella typhi infection from contaminated food or water,17,Diarrhea
+39,Urethritisinfection of urethra,33,Groin pain
+39,Urethritisinfection of urethra,30,Frequent urination (Frequency)
+39,Urethritisinfection of urethra,58,Painful urination
+39,Urethritisinfection of urethra,61,Penile discharge
+40,Whooping coughpertussis,14,Cough
+40,Whooping coughpertussis,176,Difficulty breathing
+40,Whooping coughpertussis,179,Congestion in chest or lungs
+40,Whooping coughpertussis,175,Hurts to breathe
+40,Whooping coughpertussis,104,
+41,Swine FluH1N1 Influenza,106,Sneezing
+41,Swine FluH1N1 Influenza,63,
+41,Swine FluH1N1 Influenza,104,
+41,Swine FluH1N1 Influenza,95,
+41,Swine FluH1N1 Influenza,114,
+41,Swine FluH1N1 Influenza,51,Muscle pain
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",18,Dizziness
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",2,Lower abdominal pain
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",174,Stomach and abdominal pain
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",66,Seizure
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",160,Memory loss
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",166,Dementia
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",87,"Weight loss, unexplained"
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",87,"Weight loss, unexplained"
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",119,Night sweats
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",132,
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",26,Fever
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",103,
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",92,Swollen lymph nodes (Large lymph nodes)
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",17,Diarrhea
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease",50,Mouth pain
+43,Chicken poxvaricella virus,108,Loss of balance
+43,Chicken poxvaricella virus,145,
+43,Chicken poxvaricella virus,146,Arm itching
+43,Chicken poxvaricella virus,137,Foot itching
+43,Chicken poxvaricella virus,151,Hand itching
+43,Chicken poxvaricella virus,152,Leg itching
+43,Chicken poxvaricella virus,103,
+43,Chicken poxvaricella virus,120,Blister (Pocket of fluid)
+43,Chicken poxvaricella virus,125,Pustule (Collection of pus)
+43,Chicken poxvaricella virus,144,
+43,Chicken poxvaricella virus,147,Hand redness
+43,Chicken poxvaricella virus,148,Foot redness
+43,Chicken poxvaricella virus,149,Arm redness
+43,Chicken poxvaricella virus,150,Leg redness
+43,Chicken poxvaricella virus,62,Rash
+44,Psoriasisscaly skin disease,172,Dry skin
+44,Psoriasisscaly skin disease,34,"Hand, finger ache or pain"
+44,Psoriasisscaly skin disease,145,
+44,Psoriasisscaly skin disease,146,Arm itching
+44,Psoriasisscaly skin disease,137,Foot itching
+44,Psoriasisscaly skin disease,151,Hand itching
+44,Psoriasisscaly skin disease,152,Leg itching
+44,Psoriasisscaly skin disease,135,Darkening of the skin (Hyperpigmentation)
+44,Psoriasisscaly skin disease,42,Skin itching
+44,Psoriasisscaly skin disease,144,
+44,Psoriasisscaly skin disease,147,Hand redness
+44,Psoriasisscaly skin disease,148,Foot redness
+44,Psoriasisscaly skin disease,149,Arm redness
+44,Psoriasisscaly skin disease,150,Leg redness
+44,Psoriasisscaly skin disease,62,Rash
+44,Psoriasisscaly skin disease,126,Skin pain
+44,Psoriasisscaly skin disease,158,Skin sores
+45,Jaundiceyellow skin color,62,Rash
+45,Jaundiceyellow skin color,102,Liver failure (Cirrhosis)
+46,Rheumatic fevercomplication of strep infection,124,Heart murmur (Abnormal heart sound)
+46,Rheumatic fevercomplication of strep infection,43,Joint pain
+46,Rheumatic fevercomplication of strep infection,59,Heart pulsations and palpitations
+47,Scabiesskin disease caused by mites,154,Armpit pain
+47,Scabiesskin disease caused by mites,145,
+47,Scabiesskin disease caused by mites,146,Arm itching
+47,Scabiesskin disease caused by mites,137,Foot itching
+47,Scabiesskin disease caused by mites,151,Hand itching
+47,Scabiesskin disease caused by mites,152,Leg itching
+47,Scabiesskin disease caused by mites,32,"Cranky, crying, fussy, irritable child"
+47,Scabiesskin disease caused by mites,42,Skin itching
+47,Scabiesskin disease caused by mites,144,
+47,Scabiesskin disease caused by mites,147,Hand redness
+47,Scabiesskin disease caused by mites,148,Foot redness
+47,Scabiesskin disease caused by mites,149,Arm redness
+47,Scabiesskin disease caused by mites,150,Leg redness
+47,Scabiesskin disease caused by mites,62,Rash
+47,Scabiesskin disease caused by mites,126,Skin pain
+47,Scabiesskin disease caused by mites,99,Itchy rash (Pruritic rash)
+47,Scabiesskin disease caused by mites,178,Skin bumps
+48,Alzheimer's diseasedementia,12,Change in behavior
+48,Alzheimer's diseasedementia,188,Confusion
+48,Alzheimer's diseasedementia,160,Memory loss
+48,Alzheimer's diseasedementia,166,Dementia
+48,Alzheimer's diseasedementia,96,Behavioral problem
+49,Medication reaction,12,Change in behavior
+49,Medication reaction,18,Dizziness
+49,Medication reaction,13,Constipation
+49,Medication reaction,79,Vomiting
+49,Medication reaction,110,Cyanosis (Blue skin coloration)
+49,Medication reaction,108,Loss of balance
+49,Medication reaction,160,Memory loss
+49,Medication reaction,166,Dementia
+49,Medication reaction,166,Dementia
+49,Medication reaction,187,Agitated
+49,Medication reaction,190,Nipple discharge
+49,Medication reaction,142,
+49,Medication reaction,155,Sweating
+49,Medication reaction,115,Hand numbness (paresthesias)
+49,Medication reaction,163,Foot numbness (paresthesias)
+49,Medication reaction,133,Low blood sugar
+49,Medication reaction,181,Unusual color or odor of urine
+49,Medication reaction,145,
+49,Medication reaction,146,Arm itching
+49,Medication reaction,137,Foot itching
+49,Medication reaction,151,Hand itching
+49,Medication reaction,152,Leg itching
+49,Medication reaction,168,Increased thirst
+49,Medication reaction,169,Increased urination (polyuria)
+49,Medication reaction,193,High blood sugar
+49,Medication reaction,40,Incontinence (leaking urine)
+49,Medication reaction,53,Nausea
+49,Medication reaction,57,Obesity
+49,Medication reaction,139,Infertility (Female)
+49,Medication reaction,130,Amenorrhea (No menstruation)
+49,Medication reaction,192,High blood pressure
+49,Medication reaction,85,Tremors
+49,Medication reaction,4,Anxiety (Nervousness)
+49,Medication reaction,134,Low blood pressure
+49,Medication reaction,136,Low heart rate
+49,Medication reaction,41,Insomnia (Trouble sleeping)
+49,Medication reaction,140,Increased facial hair
+49,Medication reaction,17,Diarrhea
+49,Medication reaction,144,
+49,Medication reaction,147,Hand redness
+49,Medication reaction,148,Foot redness
+49,Medication reaction,149,Arm redness
+49,Medication reaction,150,Leg redness
+49,Medication reaction,62,Rash
+49,Medication reaction,71,Substance abuse (Drug abuse)
+50,Early menopausepremature ovarian failure,130,Amenorrhea (No menstruation)
+51,Hyperparathyroidismelevated parathyroid hormone levels,180,Low back ache or pain
+51,Hyperparathyroidismelevated parathyroid hormone levels,142,
+51,Hyperparathyroidismelevated parathyroid hormone levels,192,High blood pressure
+51,Hyperparathyroidismelevated parathyroid hormone levels,42,Skin itching
+52,Rabiesdeadly viral illness transmitted by animals,97,
+52,Rabiesdeadly viral illness transmitted by animals,189,Confusion and headache
+52,Rabiesdeadly viral illness transmitted by animals,112,Drooling
+53,Chikungunyaviral illness from mosquitoes,27,Fever in the returning traveler
+54,Diabetes insipidusexcessive water loss from the kidneys,168,Increased thirst
+54,Diabetes insipidusexcessive water loss from the kidneys,169,Increased urination (polyuria)
+55,Complex migrainemigraine with neurologic changes,19,Double vision (Diplopia)
+55,Complex migrainemigraine with neurologic changes,192,High blood pressure
+55,Complex migrainemigraine with neurologic changes,81,Weakness (Muscle localized)
+56,Diabetes mellitus type 1elevated blood sugar,181,Unusual color or odor of urine
+56,Diabetes mellitus type 1elevated blood sugar,193,High blood sugar
+56,Diabetes mellitus type 1elevated blood sugar,183,Excessive appetite
+57,Fallopian tube cancer,82,Tired
+57,Fallopian tube cancer,28,Fever of unknown origin
+57,Fallopian tube cancer,60,Pelvic pain
+57,Fallopian tube cancer,75,Vaginal bleeding
+57,Fallopian tube cancer,76,Vaginal discharge
+58,Hepatitis A,82,Tired
+58,Hepatitis A,174,Stomach and abdominal pain
+58,Hepatitis A,118,Jaundice (Yellowing skin)
+58,Hepatitis A,53,Nausea
+58,Hepatitis A,26,Fever
+59,Hypoparathyroidism,172,Dry skin
+59,Hypoparathyroidism,67,Shortness of breath
+59,Hypoparathyroidism,4,Anxiety (Nervousness)
+59,Hypoparathyroidism,134,Low blood pressure
+59,Hypoparathyroidism,136,Low heart rate
+59,Hypoparathyroidism,121,Hair loss (Baldness)
+59,Hypoparathyroidism,121,Hair loss (Baldness)
+60,Prediabeteshigh blood sugar,181,Unusual color or odor of urine
+60,Prediabeteshigh blood sugar,193,High blood sugar
+60,Prediabeteshigh blood sugar,135,Darkening of the skin (Hyperpigmentation)
+61,Vitamin D deficiency,111,Muscle spasm
+61,Vitamin D deficiency,51,Muscle pain
+62,Scurvyvitamin C deficiency,172,Dry skin
+62,Scurvyvitamin C deficiency,82,Tired
+62,Scurvyvitamin C deficiency,107,Bleeding gums
+62,Scurvyvitamin C deficiency,53,Nausea
+62,Scurvyvitamin C deficiency,7,Bleeding tendency
+62,Scurvyvitamin C deficiency,51,Muscle pain
+63,Beriberithiaminevitamin B1 deficiency,82,Tired
+63,Beriberithiaminevitamin B1 deficiency,67,Shortness of breath
+63,Beriberithiaminevitamin B1 deficiency,174,Stomach and abdominal pain
+63,Beriberithiaminevitamin B1 deficiency,173,Chest pain
+63,Beriberithiaminevitamin B1 deficiency,160,Memory loss
+63,Beriberithiaminevitamin B1 deficiency,111,Muscle spasm
+63,Beriberithiaminevitamin B1 deficiency,141,Calf swelling
+64,Dystonia,70,Speech problem
+64,Dystonia,111,Muscle spasm
+64,Dystonia,85,Tremors
