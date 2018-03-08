@@ -1,0 +1,60 @@
+did,diagnose
+1,Allergy
+2,Anemia (low red blood cell count)
+3,Appendicitis
+4,Arthritisjoint inflammation
+5,Asthma
+6,Brain tumorcancer of the brain
+7,Breast cancertumor
+9,Cirrhosisliver failure and scarring
+10,Common coldupper respiratory infection
+11,Diabeteshigh blood sugar
+12,Diabetes mellitus type 2elevated blood sugar
+13,Fibroiduterine muscle tumor
+14,Goiterenlarged thyroid
+15,Hernia
+16,Hyperthyroidismelevated thyroid hormone
+17,Hypocalcemialow blood calcium
+18,Hypoglycemialow blood sugar
+19,Hypothyroidismlow thyroid hormone
+20,Leukemiablood cell cancer
+21,Malariamosquito transmitted illness
+22,Meningitisspinal fluid infection
+23,Migrainetype of headache
+24,Mumpsviral infection involving salivary glands
+25,Kidney stonenephrolithiasis
+26,"Plaguebubonic plague, bacteria yersinia infection"
+27,Pneumonialung infection
+28,"Polycystic ovarian syndromePCOS, female hormonal disorder"
+29,Premenstrual syndromePMS
+30,Primary dysmenorrheapainful menstruation
+31,Rheumatoid arthritistype of chronic joint inflammation
+32,Secondary dysmenorrheapainful menstruation
+33,Sexually transmitted diseaseSTD
+34,Sinusitissinus infection
+35,Syphilistreponema pallidum
+36,Tonsillitistonsil infection
+37,Tuberculosis infectionTB
+38,Typhoid feversalmonella typhi infection from contaminated food or water
+39,Urethritisinfection of urethra
+40,Whooping coughpertussis
+41,Swine FluH1N1 Influenza
+42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease"
+43,Chicken poxvaricella virus
+44,Psoriasisscaly skin disease
+45,Jaundiceyellow skin color
+46,Rheumatic fevercomplication of strep infection
+47,Scabiesskin disease caused by mites
+48,Alzheimer's diseasedementia
+49,Medication reaction
+50,Early menopausepremature ovarian failure
+52,Rabiesdeadly viral illness transmitted by animals
+53,Chikungunyaviral illness from mosquitoes
+54,Diabetes insipidusexcessive water loss from the kidneys
+56,Diabetes mellitus type 1elevated blood sugar
+57,Fallopian tube cancer
+58,Hepatitis A
+61,Vitamin D deficiency
+62,Scurvyvitamin C deficiency
+63,Beriberithiaminevitamin B1 deficiency
+64,Dystonia

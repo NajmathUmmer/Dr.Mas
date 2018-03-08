@@ -89,7 +89,7 @@
               <ul class="nav nav-tabs nav-stacked ">
 
                 <li><img src="{{ user.allusers.avatar.url }}" alt="" class="img-circle" height="120" width="100" alt="" /></li>
-                <li><h4>{{user.username}}</h4></li>
+                <li><h4>{{user.first_name}} {{user.first_name}}</h4></li>
                 <li role="separator" class="divider"></li>
                 <li><h4>Sex:{{user.allusers.sex}}</h4></li>
                 <li role="separator" class="divider"></li>
@@ -99,12 +99,12 @@
               </ul>
       </div>
       <div class="col-sm-9">
-        <h1>Hello {{user.username}} ....</h1>
+        <h1>Hello {{user.first_name}} ....</h1>
         <h4>Please Specify Your Symptoms</h4>
         <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:300px">
-  <option value="AL">Headache</option>
-  <option value="WY">vomiting</option>
-  <option value="WY">sweating</option>
+        {% for sym in all_symptoms %}
+        <option value={{sym.syd}}>{{sym.symptoms}}</option>
+        {% endfor %}
 </select>
       </div>
       <script>
