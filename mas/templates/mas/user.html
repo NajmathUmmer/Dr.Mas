@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>name</title>
+  <title>Dr.Mas</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -89,7 +89,7 @@
               <ul class="nav nav-tabs nav-stacked ">
 
                 <li><img src="{{ user.allusers.avatar.url }}" alt="" class="img-circle" height="120" width="100" alt="" /></li>
-                <li><h4>{{user.first_name}} {{user.first_name}}</h4></li>
+                <li><h4>{{user.first_name}} {{user.last_name}}</h4></li>
                 <li role="separator" class="divider"></li>
                 <li><h4>Sex:{{user.allusers.sex}}</h4></li>
                 <li role="separator" class="divider"></li>
@@ -99,13 +99,14 @@
               </ul>
       </div>
       <div class="col-sm-9">
-        <h1>Hello {{user.first_name}} ....</h1>
+        <h1>Hello {{user.first_name}} {{user.last_name}}....</h1>
         <h4>Please Specify Your Symptoms</h4>
         <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:300px">
         {% for sym in all_symptoms %}
         <option value={{sym.syd}}>{{sym.symptoms}}</option>
         {% endfor %}
 </select>
+        <button type="submit" class="btn btn-success">Submit</button>
       </div>
       <script>
         $(document).ready(function() {

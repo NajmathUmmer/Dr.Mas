@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 did,diagnose
 1,Allergy
 2,Anemia (low red blood cell count)
@@ -58,3 +59,65 @@ did,diagnose
 62,Scurvyvitamin C deficiency
 63,Beriberithiaminevitamin B1 deficiency
 64,Dystonia
+=======
+index,did,diagnose
+1,1,Allergy
+2,2,Anemia (low red blood cell count)
+3,3,Appendicitis
+4,4,Arthritisjoint inflammation
+5,5,Asthma
+6,6,Brain tumorcancer of the brain
+7,7,Breast cancertumor
+8,9,Cirrhosisliver failure and scarring
+9,10,Common coldupper respiratory infection
+10,11,Diabeteshigh blood sugar
+11,12,Diabetes mellitus type 2elevated blood sugar
+12,13,Fibroiduterine muscle tumor
+13,14,Goiterenlarged thyroid
+14,15,Hernia
+15,16,Hyperthyroidismelevated thyroid hormone
+16,17,Hypocalcemialow blood calcium
+17,18,Hypoglycemialow blood sugar
+18,19,Hypothyroidismlow thyroid hormone
+19,20,Leukemiablood cell cancer
+20,21,Malariamosquito transmitted illness
+21,22,Meningitisspinal fluid infection
+22,23,Migrainetype of headache
+23,24,Mumpsviral infection involving salivary glands
+24,25,Kidney stonenephrolithiasis
+25,26,"Plaguebubonic plague, bacteria yersinia infection"
+26,27,Pneumonialung infection
+27,28,"Polycystic ovarian syndromePCOS, female hormonal disorder"
+28,29,Premenstrual syndromePMS
+29,30,Primary dysmenorrheapainful menstruation
+30,31,Rheumatoid arthritistype of chronic joint inflammation
+31,32,Secondary dysmenorrheapainful menstruation
+32,33,Sexually transmitted diseaseSTD
+33,34,Sinusitissinus infection
+34,35,Syphilistreponema pallidum
+35,36,Tonsillitistonsil infection
+36,37,Tuberculosis infectionTB
+37,38,Typhoid feversalmonella typhi infection from contaminated food or water
+38,39,Urethritisinfection of urethra
+39,40,Whooping coughpertussis
+40,41,Swine FluH1N1 Influenza
+41,42,"HIV AIDSHuman Immunodeficiency Virus, Acquired Immune Deficiency SyndromeHuman immunodeficiency virus [HIV] disease"
+42,43,Chicken poxvaricella virus
+43,44,Psoriasisscaly skin disease
+44,45,Jaundiceyellow skin color
+45,46,Rheumatic fevercomplication of strep infection
+46,47,Scabiesskin disease caused by mites
+47,48,Alzheimer's diseasedementia
+48,49,Medication reaction
+49,50,Early menopausepremature ovarian failure
+50,52,Rabiesdeadly viral illness transmitted by animals
+51,53,Chikungunyaviral illness from mosquitoes
+52,54,Diabetes insipidusexcessive water loss from the kidneys
+53,56,Diabetes mellitus type 1elevated blood sugar
+54,57,Fallopian tube cancer
+55,58,Hepatitis A
+56,61,Vitamin D deficiency
+57,62,Scurvyvitamin C deficiency
+58,63,Beriberithiaminevitamin B1 deficiency
+59,64,Dystonia
+>>>>>>> d1b75de67b345f0a21238519e3fad837aecb1e94

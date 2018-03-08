@@ -5,7 +5,7 @@ from .forms import UserForm
 from .models import Symptom
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
-import pandas as pd 
+
 def logout_user(request):
 	logout(request)
 	form = UserForm(request.POST or None)
