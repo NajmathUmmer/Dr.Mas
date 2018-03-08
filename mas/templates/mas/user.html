@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
 </head>
 
 <style>
@@ -101,12 +102,19 @@
       <div class="col-sm-9">
         <h1>Hello {{user.first_name}} {{user.last_name}}....</h1>
         <h4>Please Specify Your Symptoms</h4>
-        <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width:300px">
+        <form class="form_horizontal" action="{% url 'mas:accept' %}" method="post" enctype="multipart/form-data" style="align-content: center;" >
+        {% csrf_token %}
+        <select class="js-example-basic-multiple" name="states" multiple="multiple" style="width:300px">
         {% for sym in all_symptoms %}
         <option value={{sym.syd}}>{{sym.symptoms}}</option>
         {% endfor %}
 </select>
         <button type="submit" class="btn btn-success">Submit</button>
+        {% for dis in diseases%}
+        {% if dis.did == a %}
+        <h1>Dr.Mas have diagnosed you with {{dis.diagnose}}</h1>
+        {% endif %}
+        {% endfor %}
       </div>
       <script>
         $(document).ready(function() {
