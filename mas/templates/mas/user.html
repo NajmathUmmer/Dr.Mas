@@ -1,130 +1,4 @@
-<!--{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Dr.Mas</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-</head>
-
-<style>
-    body, html {
-    height: 100%;
-    margin: 0;
-
-  }
-  .divider {
-        height: 1px;
-        margin: 9px 0;
-        overflow: hidden;
-        background-color: #e5e5e5;
-    }
- .a{
-      height: 28px;
-  }
-    
-  .affix {
-      top: 0;
-      width: 100%;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-
-   .sidenav {
-      padding-top: 20px;
-      
-      height: 100%;
-  }
-
-  .row.content {height: 450px}
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-  @media screen and (max-width: 767px) {
-      .sidenav {
-        height:auto;
-        padding: 15px;
-  }
-
-  .row.content {height:auto;} 
-
-  </style>
-
-<body>
-  
-  <nav class=" a navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="#">logo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{% url 'mas:logout_user' %}">
-                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp; Logout
-                    </a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="text-center">    
-    <div class="row content">
-      <div class="col-sm-2 sidenav navbar-inverse" style="color: #ffffff">
-        <p>My Profile</p>
-              <ul class="nav nav-tabs nav-stacked ">
-
-                <li><img src="{{ user.allusers.avatar.url }}" alt="" class="img-circle" height="120" width="100" alt="" /></li>
-                <li><h4>{{user.first_name}} {{user.last_name}}</h4></li>
-                <li role="separator" class="divider"></li>
-                <li><h4>Sex:{{user.allusers.sex}}</h4></li>
-                <li role="separator" class="divider"></li>
-                <li><h4>age:{{user.allusers.age}}</h4></li>
-                
-
-              </ul>
-      </div>
-      <div class="col-sm-9">
-        <h1>Hello {{user.first_name}} {{user.last_name}}....</h1>
-        <h4>Please Specify Your Symptoms</h4>
-        <form class="form_horizontal" action="{% url 'mas:accept' %}" method="post" enctype="multipart/form-data" style="align-content: center;" >
-        {% csrf_token %}
-        <select class="js-example-basic-multiple" name="states" multiple="multiple" style="width:300px">
-        {% for sym in all_symptoms %}
-        <option value={{sym.syd}}>{{sym.symptoms}}</option>
-        {% endfor %}
-</select>
-        <button type="submit" class="btn btn-success">Submit</button>
-        {% for dis in diseases%}
-        {% if dis.did == a %}
-        <h1>Dr.Mas has diagnosed you with {{dis.diagnose}}</h1>
-        {% endif %}
-        {% endfor %}
-      </div>
-      <script>
-        $(document).ready(function() {
-    $('.js-example-basic-multiple').select2();
-});
-      </script>
-
-</div>
-</body>
-</html>-->
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
@@ -157,7 +31,11 @@
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="#">Dr.MAS</a>
-                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -189,7 +67,7 @@
                     </div>
                 </div>
                 
-                <div class="row" style="padding-top: 100px;">
+                <div class="row" style="padding-top: 100px;padding-bottom: 200px;">
 
                     <div class="col-md-12 ml-auto mr-auto">
                     <center>
@@ -204,7 +82,7 @@
         <button type="submit" class="btn btn-info">Submit</button>
         {% for dis in diseases%}
         {% if dis.did == a %}
-        <h4>Dr.Mas has diagnosed you with {{dis.diagnose}}</h4>
+        <h4>"Dr.Mas has diagnosed you with {{dis.diagnose}}"</h4>
         {% endif %}
         {% endfor %}
       </div>
