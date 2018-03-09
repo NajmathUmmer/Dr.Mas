@@ -1,95 +1,241 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>login</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/kit/free/apple-icon.png">
+    
+    <title>
+        Dr.MAS
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/css/material-kit.css?v=2.0.2">
+    <!-- Documentation extras -->
+    
 </head>
-<style>
-    
 
-  body {
-     
-    height: auto;
-    background-image: url('{% static "images/download.jpg"%}');
-   background-size: cover;
-   background-repeat: no-repeat;
-    
-    }
-</style>
-
-<body>
-
-
-
-
-
-  
-  <nav class="navbar navbar-inverse">
-    
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Dr.Mas</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-    <div class="container" style="padding-top: 60px;">
-  
-            <center>
-            <div class="well" style="height: 350px; width: 350px;">
-            
-                    <h3>Log In</h3>
-                    {% if error_message %}
+<body class="landing-page ">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="../index.html">Dr.MAS</a>
+                
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+                            {% if error_message %}
                         <p><strong>{{ error_message }}</strong></p>
                     {% endif %}
-                    <form class="form-horizontal" role="form" action="{% url 'mas:login_user'%}" method="post" enctype="multipart/form-data">
+                    <form class="form-inline" role="form" action="{% url 'mas:login_user'%}" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
+                        
                         <div class="form-group">
                             
                             
                                 <input id="id_username" maxlength="30" name="username" type="text" placeholder="Username" class="form-control">
-                            </div>
-                        
-                        <div class="form-group">
+                            
                             
                             
                                 <input id="id_password" maxlength="30" name="password" type="password" placeholder="Password" class="form-control">
-                            </div>
-
-                        
-                        <div class="form-group">
                             
-                                <button type="submit" class="btn btn-lg btn-block btn-primary">Login</button>
-                                <input type="hidden" name="next" value="" />
+
                         
+                        
+                            
+                                <button type="submit" class="btn btn-info">Login</button>
+                                <input type="hidden" name="next" value="" />
+                        </div>
                     </form>
+                        </a>
+                    </li>
                     
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header header-filter" data-parallax="true" style=" background-image: url('{% static "images/background.jpg" %}'); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title">Your Story Starts With Us.</h1>
+                    <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-info btn-raised btn-lg">
+                        Sign Up for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-raised">
+        <div class="container">
+            <div class="section text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">Let&apos;s talk product</h2>
+                        <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
                     </div>
-                    </center>
                 </div>
+                <div class="features">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-info">
+                                    <i class="material-icons">chat</i>
+                                </div>
+                                <h4 class="info-title">Free Chat</h4>
+                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-success">
+                                    <i class="material-icons">verified_user</i>
+                                </div>
+                                <h4 class="info-title">Verified Users</h4>
+                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                                <div class="icon icon-danger">
+                                    <i class="material-icons">fingerprint</i>
+                                </div>
+                                <h4 class="info-title">Fingerprint</h4>
+                                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                
+            </div>
+            <div class="section text-center">
+                <h2 class="title">Here is our team</h2>
+                <div class="team">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="team-player">
+                                <div class="card card-plain">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src= "{% static "images/najmath.jpg" %}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                                    </div>
+                                    <h4 class="card-title">Najmath Ummer
+                                        
+                                    </h4>
+                                    <div class="card-body">
+                                        <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                            <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                    </div>
+                                    <div class="card-footer justify-content-center">
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-player">
+                                <div class="card card-plain">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src= "{% static "images/najmath.jpg" %}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                                    </div>
+                                    <h4 class="card-title">Sanjana Thomas
+                                        
+                                    </h4>
+                                    <div class="card-body">
+                                        <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                            <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                    </div>
+                                    <div class="card-footer justify-content-center">
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-player">
+                                <div class="card card-plain">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src="../assets/img/kit/faces/kendall.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                                    </div>
+                                    <h4 class="card-title">Aswani M.S
+                                        <br>
+                                        
+                                    </h4>
+                                    <div class="card-body">
+                                        <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                            <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                    </div>
+                                    <div class="card-footer justify-content-center">
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-player">
+                                <div class="card card-plain">
+                                    <div class="col-md-6 ml-auto mr-auto">
+                                        <img src="{% static "images/aparna.jpg" %}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                                    </div>
+                                    <h4 class="card-title">Aparna Devi
+                                        <br>
+                                        
+                                    </h4>
+                                    <div class="card-body">
+                                        <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                                            <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                                    </div>
+                                    <div class="card-footer justify-content-center">
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                                        <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container">
             
-        
+            <div class="copyright pull-right">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>, made with <i class="material-icons">favorite</i> by
+                for a better world.
+            </div>
+        </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="static/js/core/jquery.min.js"></script>
+    <script src="static/js/core/popper.min.js"></script>
+    <script src="static/js/bootstrap-material-design.js"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
+    <script src="static/js/plugins/moment.min.js"></script>
+    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="static/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <!--    Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="static/js/plugins/nouislider.min.js"></script>
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script src="static/js/material-kit.js?v=2.0.2"></script>
     
-
-
 </body>
-</html>
 
+</html>

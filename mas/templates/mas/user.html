@@ -1,4 +1,4 @@
-{% load staticfiles %}
+<!--{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,4 +124,126 @@
 
 </div>
 </body>
+</html>-->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="static/img/kit/free/apple-icon.png">
+    <link rel="icon" href="static/img/kit/free/favicon.png">
+
+    <title>
+        Home
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/css/material-kit.css?v=2.0.2">
+    <!-- Documentation extras -->
+    
+</head>
+
+<body class="profile-page ">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-sm " color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#">Dr.MAS</a>
+                
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                       <li><a href="{% url 'mas:logout_user' %}" class="navbar-brand">
+                        Logout
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('{% static "images/background.jpg" %}');"></div>
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="{{ user.allusers.avatar.url }}" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                            </div>
+                            <div class="name">
+                                <h3 class="title">{{user.first_name}} {{user.last_name}}</h3>
+                                <h6>Sex:{{user.allusers.sex}} age:{{user.allusers.age}}</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row" style="padding-top: 100px;">
+
+                    <div class="col-md-12 ml-auto mr-auto">
+                    <center>
+                    <h4>Hello {{user.first_name}} {{user.last_name}}, Please Specify Your Symptoms</h4>
+        <form class="form_horizontal" action="{% url 'mas:accept' %}" method="post" enctype="multipart/form-data" style="align-content: center;" >
+        {% csrf_token %}
+        <select class="js-example-basic-multiple" name="states" multiple="multiple" style="width:300px">
+        {% for sym in all_symptoms %}
+        <option value={{sym.syd}}>{{sym.symptoms}}</option>
+        {% endfor %}
+</select>
+        <button type="submit" class="btn btn-info">Submit</button>
+        {% for dis in diseases%}
+        {% if dis.did == a %}
+        <h4>Dr.Mas has diagnosed you with {{dis.diagnose}}</h4>
+        {% endif %}
+        {% endfor %}
+      </div>
+      
+
+</div>
+    </center>       
+    <footer class="footer ">
+        <div class="container">
+            
+            <div class="copyright pull-right">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>, made with <i class="material-icons">favorite</i> by
+                for a better world.
+            </div>
+        </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="static/js/core/jquery.min.js"></script>
+    <script src="static/js/core/popper.min.js"></script>
+    <script src="static/js/bootstrap-material-design.js"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
+    <script src="static/js/plugins/moment.min.js"></script>
+    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="static/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <!--    Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="static/js/plugins/nouislider.min.js"></script>
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script src="static/js/material-kit.js?v=2.0.2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+      </script>
+
+    
+</body>
+
 </html>
