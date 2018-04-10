@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link rel="stylesheet" href="static/css/material-kit.css?v=2.0.2">
     <!-- Documentation extras -->
+    <style>
+      .invisible{
+        visibility: hidden
+      }
+    </style>
     
 </head>
 
@@ -55,8 +60,11 @@
                 <div class="row">
                     <div class="col-md-6 ml-auto mr-auto">
                         <div class="profile">
-                            <div class="avatar">
-                                <img src="{{ user.allusers.avatar.url }}" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                            <div class="avatar" style="position: relative;">
+                                
+                                <img src="{{ user.allusers.avatar.url }}" alt="Circle Image" class="img-raised rounded-circle img-fluid" style="height: 160px; width: 160px;" id=pic >
+                                
+                                
                             </div>
                             <div class="name">
                                 <h3 class="title">{{user.first_name}} {{user.last_name}}</h3>
@@ -72,24 +80,33 @@
                     <div class="col-md-12 ml-auto mr-auto">
                     <center>
                     <h4>Hello {{user.first_name}} {{user.last_name}}, Please Specify Your Symptoms</h4>
-        <form class="form_horizontal" action="{% url 'mas:accept' %}" method="post" enctype="multipart/form-data" style="align-content: center;" >
-        {% csrf_token %}
+        
+        
         <select class="js-example-basic-multiple" name="states" multiple="multiple" style="width:300px">
         {% for sym in all_symptoms %}
+        {% if sym.sex == '' or sym.sex == user.allusers.sex %}
         <option value={{sym.syd}}>{{sym.symptoms}}</option>
-        {% endfor %}
-</select>
-        <button type="submit" class="btn btn-info">Submit</button>
-        {% for dis in diseases%}
-        {% if dis.did == a %}
-        <h4>"Dr.Mas has diagnosed you with {{dis.diagnose}}"</h4>
         {% endif %}
         {% endfor %}
-      </div>
-      
-
+</select>
+<div class="invisible" id="warning">
+     <h4>Please add atleast 2 symptoms</h4>
 </div>
-    </center>       
+<div class="invisible" id="alert">
+     <h4>Add more symptoms.Matching diseases not found</h4>
+</div>
+ <div class="invisible" id="diagnosis">
+   <h3>Possible Diagnoses:-</h3>
+    <span id="loader">Diagnosing.....</span>
+    
+    <ul id="diagnosis-list" class="invisible"></ul>
+ </div>       
+       
+      
+</center>     
+</div>
+
+      
     <footer class="footer ">
         <div class="container">
             
@@ -97,7 +114,7 @@
                 &copy;
                 <script>
                     document.write(new Date().getFullYear())
-                </script>, made with <i class="material-icons">favorite</i> by
+                </script>, made with <i class="material-icons">favorite</i>
                 for a better world.
             </div>
         </div>
@@ -117,11 +134,93 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
+          //Setup CSRF token for ajax requests
+          $('#change').hide()
+          $('#pic').hover(function(){
+            $('#change').show()
+          });
+          
+          
+
+        function getCookie(name)
+        {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        $.ajaxSetup({ 
+            beforeSend: function(xhr, settings) {
+                if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
+                    xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+                }
+            } 
+        });
     $('.js-example-basic-multiple').select2();
-});
+    $('.js-example-basic-multiple').change(function(){
+        $('#diagnosis-list').html('');
+      var symArray=$('.js-example-basic-multiple').val();
+      if (symArray.length>=2){
+      
+      $('#diagnosis').removeClass('invisible');
+      $('#warning').addClass('invisible');
+      $('#alert').addClass('invisible');
+      $('#loader').removeClass('invisible');
+      $.ajax({
+      url:"/diagnose",
+      method:"post",
+      data:{
+        symptoms: $('.js-example-basic-multiple').val(),
+        name: 'najmathummer'
+      },
+      success: function(data){
+
+        data.forEach(function(disease){
+          $('#diagnosis-list').append('<li>' + '<a href="'+ disease.des + '"'+'target="_blank">'+ disease.name + '</a>' +'</li>')
+
+        });
+        if ($("#diagnosis-list li").length==0){
+          $('#alert').removeClass('invisible');
+          $('#diagnosis').addClass('invisible');
+            
+          }
+
+        $('#diagnosis-list').removeClass('invisible');
+        $('#loader').addClass('invisible');
+
+      }
+
+      });}
+      else if(symArray.length==1){
+        $('#alert').addClass('invisible');
+         $('#warning').removeClass('invisible');
+          $('#diagnosis').addClass('invisible');
+      }
+      else{
+
+        $('#diagnosis').addClass('invisible');
+         $('#warning').addClass('invisible');
+
+
+      }
+    });
+
+
+
+}); //closing of ready
       </script>
 
     
 </body>
 
 </html>
+

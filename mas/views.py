@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
-from .forms import UserForm
-from .models import Symptom,Disease
+#from .forms import UserForm
+from .models import Symptom,Disease,Allusers
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from sklearn.linear_model import LogisticRegression
@@ -11,14 +12,22 @@ import pandas
 import json
 import numpy as np
 
+url='dataset1.csv'
+dataset = pandas.read_csv(url, index_col=0)
+clf = LogisticRegression()
+array = dataset.values
+X = array[:,0:170]
+Y = array[:,170]
+clf = clf.fit(X, Y)
+
 def logout_user(request):
 	logout(request)
-	form = UserForm(request.POST or None)
+	'''form = UserForm(request.POST or None)
 	context = {
 		"form": form,
 	}
-	return render(request, 'mas/login.html', context)
-
+	return render(request, 'mas/login.html', context)'''
+	return render(request, 'mas/login.html')
 
 
 
@@ -46,8 +55,26 @@ def home(request):
 	diseases=Disease.objects.all()
 	all_symptoms = Symptom.objects.all()
 	return render(request, 'mas/user.html', {'user':user, 'all_symptoms':all_symptoms, 'diseases':diseases})
-
-def accept(request):
+def signup(request):
+	if request.method == "POST":
+		username = request.POST['username']
+		if request.POST['psw'] == request.POST['psw-repeat']:
+			password = request.POST['psw']
+			usera = authenticate(username=username, password=password)
+			if usera.is_authenticated:
+				return render(request, 'mas/login.html', {'error_message': 'Already a member'})
+			firstname=request.POST['firstname']
+			lastname=request.POST['lastname']
+			user = User.objects.create_user(username=username, password=password, first_name=firstname, last_name=lastname)
+			age=request.POST['age']
+			sex=request.POST['sex']
+			alluser = Allusers(user=user,age=age,sex=sex)
+			alluser.save()
+			return render(request, 'mas/login.html')
+		
+	return render(request, 'mas/login.html')
+	
+'''def accept(request):
 	
 	user = request.user
 	diseases=Disease.objects.all()
@@ -74,4 +101,34 @@ def accept(request):
 	sorted_probs = sorted(prob_dicts, key=lambda dict: dict['probability'], reverse=True)
 	#print(json.dumps(sorted_probs, indent=2))
 	a=clf.predict([mask_array])
-	return render(request, 'mas/user.html', {'user':user, 'all_symptoms':all_symptoms, 'diseases':diseases, 'a':a})
+	return render(request, 'mas/user.html', {'user':user, 'all_symptoms':all_symptoms, 'diseases':diseases, 'a':a})'''
+def diagnose(request):
+	states=request.POST.getlist('symptoms[]')
+	states=list(map(int,states))
+	age=request.user.allusers.age
+	sex=request.user.allusers.sex
+	a={'Female':0,'Male':1}
+	index_array = np.array(states)
+	index_array = [val-1 for val in index_array]
+	mask_array = np.zeros(168,dtype=int)
+	mask_array[index_array] = 1
+	mask_array=np.append(a[sex],mask_array)
+	mask_array=np.append(age,mask_array)
+	prob_array = clf.predict_proba([mask_array])
+	# Convert probability array into a list of dictionaries, with disease id and probability keys
+	prob_dicts = [{'disease': index + 1, 'probability': value} for index, value in enumerate(prob_array[0]) if value > 0.3]
+	# Sort the list of dictionaries based on probability to get our list of possible diagnoses
+	sorted_probs = sorted(prob_dicts, key=lambda dict: dict['probability'], reverse=True)
+	#sorted_probs=sorted_probs[0:3]
+	for dis in sorted_probs:
+		diseases=Disease.objects.get(did=dis['disease'])
+		dis['name']=diseases.diagnose
+		dis['des']=diseases.description
+
+
+	#print(json.dumps(sorted_probs, indent=2))
+	a=clf.predict([mask_array])
+
+	
+
+	return JsonResponse(sorted_probs,safe=False)

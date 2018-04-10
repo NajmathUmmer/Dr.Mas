@@ -6,9 +6,9 @@ class MasForm(forms.Form):
     date = forms.DateField(widget=forms.TextInput(attrs={'class':'datepicker'}))
 
 
-class UserForm(forms.ModelForm):
+'''class UserForm(forms.ModelForm):
 	password = forms.CharField(widget=forms.PasswordInput)
 
 	class Meta:
 		model = User
-		fields = ['username', 'password']
+		fields = ['username', 'password']'''
