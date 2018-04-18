@@ -21,9 +21,7 @@ dataset = pandas.read_csv(url, index_col=0)
 clf = LogisticRegression()
 array = dataset.values
 X = array[:,0:170]
-print(X)
 Y = array[:,170]
-print(Y)
 clf = clf.fit(X, Y)
 
 def logout_user(request):
@@ -62,7 +60,7 @@ def signup(request):
 		if request.POST['psw'] == request.POST['psw-repeat']:
 			password = request.POST['psw']
 			usera = authenticate(username=username, password=password)
-			if usera.is_authenticated:
+			if usera is not None:
 				return render(request, 'mas/login.html', {'error_message': 'Already a member'})
 			firstname=request.POST['firstname']
 			lastname=request.POST['lastname']
@@ -72,7 +70,6 @@ def signup(request):
 			alluser = Allusers(user=user,age=age,sex=sex)
 			alluser.save()
 			return render(request, 'mas/login.html')
-		
 	return render(request, 'mas/login.html')
 	
 def diagnose(request):
@@ -89,7 +86,7 @@ def diagnose(request):
 	mask_array=np.append(age,mask_array)
 	prob_array = clf.predict_proba([mask_array])
 	# Convert probability array into a list of dictionaries, with disease id and probability keys
-	prob_dicts = [{'disease': index + 1, 'probability': value} for index, value in enumerate(prob_array[0]) if value > 0.3]
+	prob_dicts = [{'disease': index + 1, 'probability': value} for index, value in enumerate(prob_array[0]) if value > 0.5]
 	# Sort the list of dictionaries based on probability to get our list of possible diagnoses
 	sorted_probs = sorted(prob_dicts, key=lambda dict: dict['probability'], reverse=True)
 	#sorted_probs=sorted_probs[0:3]
@@ -107,7 +104,7 @@ def predict(request):
  	diseaseArray=np.array(diseaseArray)
  	dictArray=[]
  	for dicti in dictionary:
- 		if (set(sym)<= set(dicti['symptoms']) and len(sym)!= 0) or [x for x in sym if x in dicti['primary']]:
+ 		if (set(sym)<= set((dicti['symptoms']+dicti['primary'])) and len(sym)!= 0):
  			diseaseArray=np.append(diseaseArray,dicti['primary'])
  			diseaseArray=np.append(diseaseArray,dicti['symptoms'])
  	diseaseArray=list(set(diseaseArray))

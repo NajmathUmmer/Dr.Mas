@@ -1,7 +1,7 @@
 # Load libraries
 import pandas
 from pandas.plotting import scatter_matrix
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from sklearn import model_selection
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
@@ -21,7 +21,7 @@ array = dataset.values
 X = array[:,1:171]
 Y = array[:,171]
 
-validation_size = 0.40
+validation_size = 0.20
 seed = 7
 X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed, stratify=Y)
 # Test options and evaluation metric
@@ -33,8 +33,8 @@ models.append(('LR', LogisticRegression()))
 # models.append(('LDA', LinearDiscriminantAnalysis()))
 models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
-# models.append(('NB', GaussianNB()))
-# models.append(('SVM', SVC()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC()))
 # evaluate each model in turn
 results = []
 names = []

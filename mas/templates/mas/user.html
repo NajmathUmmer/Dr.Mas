@@ -98,6 +98,10 @@
                             </div>
                             <h4 class="info-title">Do you also have any of these?</h4>
                             <p id="suggestion-list">Click to select<br></p>
+                            <p style="text-align: right;">
+                            <i class="material-icons hidden" data-page=1 id="prev" style="cursor: pointer;">navigate_before</i>
+                            <i class="material-icons" data-page=1 id="next" style="cursor: pointer;">navigate_next</i>
+                            </p>
 
                         </div>
                     <div class="col-md-4 ml-auto mr-auto text-center">
@@ -186,6 +190,8 @@
             } 
         });
 
+        var pages = 1;
+
     $('.js-example-basic-multiple').select2();
 
                         $(document).on('click', '.suggestion', function(){
@@ -205,9 +211,28 @@
         symptoms: $('.js-example-basic-multiple').val(),
       },
                                 success: function (data) {
+                                    var index = 0;
                                     data.forEach(function (disease, suggestionIndex) {
-                                        if (suggestionIndex < 15 && (disease.sex == disease.user || disease.sex == '')) {
-                                            var suggestionLi = '<a href="javascript:void(0)" class="suggestion text-dark" id="' + disease.id + '">' + disease.name + '</a><br>';
+                                        pages = Math.ceil(data.length / 10);
+                                        if(pages > 1){
+                                            $('#next').removeClass('hidden');
+                                        }
+                                        else{
+                                            $('#next').addClass('hidden');
+                                        }
+                                        $('#next').attr('data-page', 1);
+                                        $('#prev').attr('data-page', 1);
+                                        $('#prev').addClass('hidden');
+                                        if (disease.sex == disease.user || disease.sex == '') {
+                                            index++;
+                                            var suggestionLi = $('<span class="suggestion-span"><a href="javascript:void(0)" class="suggestion text-dark" id="' + disease.id + '">' + disease.name + '</a><br></span>');
+                                            if(index > 10){
+                                              suggestionLi.addClass('hidden');
+                                              suggestionLi.attr('data-page', Math.ceil((index/10)));
+                                            }
+                                            else{
+                                            suggestionLi.attr('data-page', 1);
+                                            }
                                             $('#suggestion-list').append(suggestionLi);
                                         }
             });
@@ -220,7 +245,7 @@
       }
       });
 
-        $('#diagnosis-list').html('');
+      $('#diagnosis-list').html('');
                             var symArray = $('.js-example-basic-multiple').val();
                             if (symArray.length >= 2) {
       
@@ -267,8 +292,45 @@
 
       }
     });
-
-
+    
+    $('#next, #prev').on('click', function(){
+        var currentPage = parseInt($(this).attr('data-page'));
+        var newPage;
+        if($(this).attr('id') == 'next'){
+            newPage = currentPage + 1;
+        }
+        else{
+            newPage = currentPage - 1;
+        }
+        if(newPage > pages || newPage < 1){
+            return;
+        }
+        $('.suggestion-span').each(function(){
+            if($(this).attr('data-page') == newPage.toString()){
+                $(this).removeClass('hidden');
+            }
+            else{
+                $(this).addClass('hidden');
+            }
+      });
+        if(newPage == 1){
+            $('#prev').addClass('hidden');
+        }
+        else{
+          $('#prev').removeClass('hidden');
+        }
+        console.log('Clicked :' + $(this).attr('id'));
+        console.log('Current: ' + currentPage + ', Pages: ' + pages + ', New: ' + newPage);
+        
+        if(newPage == pages){
+            $('#next').addClass('hidden');
+        }
+        else{
+          $('#next').removeClass('hidden');
+        }
+        $('#next').attr('data-page', newPage);
+        $('#prev').attr('data-page', newPage);
+    });
 
 }); //closing of ready
       </script>
